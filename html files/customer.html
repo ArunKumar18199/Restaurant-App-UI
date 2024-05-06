@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AK Restaurant - Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="about">
+        <h1 style="text-align: center; font-family:'Comforter Brush', cursive;" id="s1">CUSTOMER MANAGEMENT</h1> <br>
+        <div class="container">
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required></textarea>
+
+                <input type="submit" value="Save Customer">
+                <input type="reset" value="Clear Form">
+            </form>
+        </div><br>
+
+        <h1>Customer Information</h1>
+        <table id="customerData">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="customerName">John Doe</td>
+                    <td id="customerEmail">john.doe@example.com</td>
+                    <td id="customerPhone">123-456-7890</td>
+                </tr>
+            </tbody>
+        </table><br>
+        <h2>Order History</h2>
+        <table id="orderHistory">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Date</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>#1001</td>
+                    <td>2023-01-01</td>
+                    <td>$25.00</td>
+                </tr>
+                <tr>
+                    <td>#1002</td>
+                    <td>2023-01-05</td>
+                    <td>$32.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AK Restaurant - Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="about">
+        <h1 style="text-align: center; font-family:'Comforter Brush', cursive;" id="s1">RESERVATION MANAGEMENT</h1> <br>
+        <form id="reservationForm">
+            <label for="reservationDate">Reservation Date:</label><br>
+            <input type="date" id="reservationDate" name="reservationDate" required><br>
+            <label for="reservationTime">Reservation Time:</label><br>
+            <input type="time" id="reservationTime" name="reservationTime" required><br>
+            <label for="numberOfGuests">Number of Guests:</label><br>
+            <input type="number" id="numberOfGuests" name="numberOfGuests" min="1" max="10" required><br>
+            <label for="specialRequests">Special Requests:</label><br>
+            <textarea id="specialRequests" name="specialRequests"></textarea><br>
+            <button type="submit">Make Reservation</button>
+        </form><br>
+        <h2>Upcoming Reservations</h2>
+        <table id="reservationTable">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Guests</th>
+                    <th>Special Requests</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2023-01-01</td>
+                    <td>19:00</td>
+                    <td>2</td>
+                    <td>No special requests</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

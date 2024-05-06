@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant App - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to AK Restaurant!</h1>
+        <nav class="nav">
+            <div class="nav-container">&nbsp; &nbsp; 
+                <span><a href="#home" onclick="toggleSection('main')">HOME</a></span>
+                <span><a href="#menu" onclick="toggleSection('menu')">MENU</a></span>
+                <span><a href="#orders" onclick="toggleSection('order')">ORDER</a></span>
+                <span><a href="#customers" onclick="toggleSection('customer')">CUSTOMER</a></span>
+                <span><a href="#reservations" onclick="toggleSection('reservation')">RESERVATION</a></span>
+                <span><a href="#employees" onclick="toggleSection('employee')">EMPLOYEE</a></span>
+                <span><a href="Login Page.html" id="login">LOGIN</a></span>
+                <span><a href="SignUp page.html">SIGNUP</a></span>
+                <span><a href="help.html">HELP</a></span>
+            </div>
+        </nav>        
+    </header>
+    <main>
+        <section id="mainSection" class="featured-items">
+            <center>
+                <div>
+                    <h1><span class="type"></span></h1> <br>
+                    <h2 class="sub-head">Order Now! and get <br>Hot & Delicious food<br> at your doorstep.</h2> <br>
+                    <div class="flex-row">
+                        <div class="search-box">
+                            <input type="text" placeholder="Enter your delivery location" class="search-input"/>
+                            <button class="login-button"><a href="" style="text-decoration: none;">Locate Me</a></button>
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </center>
+            <div id="about">
+                <h1 style="text-align: center; font-family:'Comforter Brush', cursive;" id="s1">About Us</h1> <br>
+                <p style="font-size: x-large; text-align: center; font-family: 'Times New Roman', Times, serif;" >Craving some delicious Greek food? Maybe you’re in the mood for a juicy steak? No matter what kind of meal you have in mind, The AK Restaurant is ready to prepare it for you.
+                Since 2003, The Spot Restaurant has been the go-to diner for residents of Binghamton, NY. Our diner serves breakfast all day, in addition to wholesome and flavorful dining options for lunch and dinner. From burgers to salads, seafood to pastas, you’ll find all kinds of hearty meals prepared fresh at The AK Restaurant. Our diner also has a full bakery with delicious baked goods and other treats, including our famous cheesecake. Sounds delicious, right?
+                We’re here to serve you the best food around, whenever you’re looking for a great American restaurant in Binghamton, NY.</p>
+            </div>
+        </section>
+        <section class="featured-items" style="display: none;" id="menuSection">
+            <object type="text/html" data="menu.html"  class="embedded-content"></object>
+        </section>
+        <section class="featured-items" style="display: none;" id="orderSection">
+           <object type="text/html" data="order.html"  class="embedded-content"></object>
+        </section>
+        <section class="featured-items" style="display: none;" id="customerSection">
+            <object type="text/html" data="customer.html"  class="embedded-content"></object>
+        </section>
+        <section class="featured-items" style="display: none;" id="reservationSection">
+            <object type="text/html" data="reservation.html"  class="embedded-content"></object>
+        </section>
+        <section class="featured-items" style="display: none;" id="employeeSection">
+            <object type="text/html" data="employee.html"  class="embedded-content"></object>
+        </section>            
+    </main>
+    <footer>
+        <p>&copy; All rights are reserved for AK Restaurant.<br>
+        arunk18199@gmail.com</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
+</body>
+</html>
